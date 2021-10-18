@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'Hasteristico';
+	src: url(hasteristico-bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hasteristico';
+	src: url(hasteristico-light.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  padding: 1.5em;
+  margin: 0;
+  background-color: black;
+  font-family: 'Hasteristico';
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div {
+  /*border: 1px solid magenta;*/
+  position: relative;
+  overflow: visible;
+}
+
+.tip {
+  --color: yellow;
+
+  position: absolute;
+  background-color: var(--color);
+  min-width: max-content;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+
+.tip::first-letter {
+  text-transform: uppercase;
+}
+
+.tip::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tip.left::before {
+  border-width: 0.5em 0 0.5em 0.5em;
+  border-color: transparent transparent transparent var(--color);
+  left: 100%;
+}
+
+.tip.right::before {
+  border-width: 0.5em 0.5em 0.5em 0;
+  border-color: transparent var(--color) transparent transparent;
+  right: 100%;
+}
+
+#title-tip {
+  top: 56.5%;
+  left: 100%;
+}
+
+#tags-tip {
+  top: 64.5%;
+  left: 100%;
+}
+
+#tags-auto-complete-tip{
+  top: 75.75%;
+  left: 63.5%;
+}
+
+#workspace-tip {
+  top: 84%;
+  left: 100%;
+}
+
+#send-tip {
+  top: 92.5%;
+  right: 87.5%;
+}
