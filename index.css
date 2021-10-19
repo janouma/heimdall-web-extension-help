@@ -24,7 +24,6 @@ body {
 }
 
 body > div {
-  /*border: 1px solid magenta;*/
   position: relative;
   overflow: visible;
 }
