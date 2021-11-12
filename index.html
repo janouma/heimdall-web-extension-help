@@ -7,13 +7,99 @@
     <title>Heimdall widget help</title>
   </head>
   <body>
-    <div>
-      <img src="safari_heimdall_widget_ios_screenshot.png" />
-      <div class="tip right" id="title-tip">edit title if needed</div>
-      <div class="tip right" id="tags-tip">type in tags / keywords name then hit « Enter » to commit</div>
-      <div class="tip right" id="tags-auto-complete-tip">alternatively hit tag icons from completion results</div>
-      <div class="tip right" id="workspace-tip">fill in workspace if needed and hit « Enter »</div>
-      <div class="tip left" id="send-tip">hit to send to « Heimdall » app</div>
-    </div>
+    <h1>heimdall widget help</h1>
+    <p>
+      heimdall widget is a Safari web extension from which one can add a link to the <span class="nowrap"><a href="https://www.heimdallinsight.com" target="_blank">Heimdall web application</a> <a href="#asterix"><sup>[1]</sup></a></span>.
+    </p>
+
+    <h2>setting up the extension</h2>
+
+    <p>first you need to configure the web extension.</p>
+    <p>The first time you launch the extension, you get the following popup 👇</p>
+
+    <div id="macos_logged_out" class="screenshot wide"></div>
+    <div id="ios_logged_out" class="screenshot narrow"></div>
+
+    <p>clicking on the link <em>— "open settings to sign in" —</em> in the popoup will open the web extension settings shown below</p>
+
+    <div id="macos_widget_login" class="screenshot wide"></div>
+    <div id="ios_widget_login" class="screenshot narrow"></div>
+
+    <p>from there fill in your credentials for the Heimdall web app account<a href="#asterix"><sup>[2]</sup></a> and hit "connect". On successful authentication you get this screen 👇 showing your Heimdall account user name.</p>
+
+    <div id="macos_widget_logged_in" class="screenshot wide"></div>
+    <div id="ios_widget_logged_in" class="screenshot narrow"></div>
+
+    <p>at this point you are done setting up the web extension, you can now close the settings window/tab.</p>
+
+    <h2>using the extension</h2>
+
+    <h3>adding a bookmark to the Heimdall web app</h3>
+
+    <p>open a tab and navigate to a web site that you wish to add to your Heimdall bookmarks collection, then activate the extension from there: this time you get this form 👇</p>
+
+    <div id="macos_add_bookmark" class="screenshot wide"></div>
+    <div id="ios_add_bookmark" class="screenshot narrow"></div>
+
+    <p>complete the form <em>— as shown in the animation below</em> 👇:</p>
+    <ul>
+      <li>edit the bookmark title <em>— if needed</em></li>
+      <li>apply at least one tag</li>
+      <ol>
+        <li>type freely in the tag field</li>
+        <li>then hit the return key or click on (one of) the tag(s) from the auto-completion list below the field</li>
+      </ol>
+      <li>apply one workspace <em>— if needed —</em> or more</li>
+      <ol>
+        <li>type freely in the workspace field</li>
+        <li>then hit the return key or click on (one of) the workspace(s) from the auto-completion list below the field</li>
+      </ol>
+      <li>hit the <em>— "All Good" —</em> submit button and wait untill the text of the button changes to green "All Cool".</li>
+    </ul>
+
+    <div id="macos_fill_in_form" class="screenshot wide"></div>
+    <div id="ios_fill_in_form" class="screenshot narrow"></div>
+
+    <p>at this point your bookmark is successfully saved in the Heimdall web app and all buttons are now disabled. You can now close the extension by clicking again on the extension icon next to the address bar <em>— on mac os —</em> or on the "OK" button in the extension popup header <em>— on ios</em>.</p>
+
+    <h3>checking your newly added bookmark in the Heimdall web app</h3>
+
+    <p>if you want to check the new bookmark, navigate to the <span class="nowrap"><a href="https://www.heimdallinsight.com" target="_blank">Heimdall web application</a></span> <em class="nowrap">(<a href="https://www.heimdallinsight.com" target="_blank">https://www.heimdallinsight.com</a>)</em>, fill in your credentials for the Heimdall web app account<a href="#asterix"><sup>[2]</sup></a> and hit "connect".</p>
+
+    <p>once you are successfully logged in, activate the <img src="images/drafts_switch.png" alt='"Drafts"'/> switch in the header <em>— if you applied the "Draft" tag while adding your bookmark</em>, then type in any word from your bookmark title in the search bar. Your newly added bookmark should now show up in the search results as shown in the screenshot below 👇</p>
+
+    <div id="macos_search_results" class="screenshot wide"></div>
+    <div id="ios_search_results" class="screenshot narrow"></div>
+
+    <h2>loging out of the extension</h2>
+
+    <p>If you wish to disconnect your Heimdall account from the extension, open the extension settings page</p>
+
+    <ul>
+      <li><strong>on mac os:</strong> Safari > Settings > Extensions > Heimdall widget > Settings</li>
+      <li><strong>on ios:</strong> Settings > Safari > Extensions > Heimdall widget > Extension settings</li>
+    </ul>
+
+    <p>then simply click on your user name, the disconnection will happen and the login form will show up again.</p>
+
+    <h2 class="footnotes">footnotes</h2>
+
+    <p>
+      <a name="asterix">
+        <sub>
+          <span>[1]</span>
+          <span>
+            Heimdall is a web application that helps for surveys by allowing to save and categorize links considered relevant and retrieve them easily for future references;
+          </span>
+        </sub>
+
+        <sub>
+          <span>[2]</span>
+          <span>
+            Heimdall accounts can only be obtained through invite.
+          </span>
+        </sub>
+      </a>
+    </p>
   </body>
 </html>
